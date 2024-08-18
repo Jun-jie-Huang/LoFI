@@ -1,6 +1,6 @@
-# LoFI: Extracting Fault-indicating Information from Logs via Prompt-based Tuning
+# Demystifying and Extracting Fault-indicating Information from Logs for Failure Diagnosis
 
-This is the anonymous repository for our paper **"LoFI: Extracting Fault-indicating Information from Logs via Prompt-based Tuning"** accepted by ISSRE 2024. 
+This is the public repository for our paper **"Demystifying and Extracting Fault-indicating Information from Logs for Failure Diagnosis"** accepted by ISSRE 2024. 
 In this paper, we propose an automated approach to extract fault-indicating information from logs.
 
 ![Extracting Log Fault-indicting Information](./docs/diagnosis.png)
