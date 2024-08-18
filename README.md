@@ -79,3 +79,8 @@ You can also evaluate the performance of Industry dataset by replacing `--traini
 The dataset is available at `./data/Apache` and `./data/Industry-clean`.
 In this repository, we provide an anonymized dataset with confidential information removed.
 
+### Citation
+If you find this repo helpful, please cite our paper: 
+```
+
+```
