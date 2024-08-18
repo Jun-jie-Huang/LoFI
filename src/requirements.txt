@@ -1,0 +1,13 @@
+numpy
+pandas
+tqdm
+torch==2.0.0
+transformers==4.26.1
+sentence_transformers==2.2.2
+scikit-learn
+openai
+revChatGPT
+rouge
+evaluate
+gensim
+nltk
