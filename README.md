@@ -69,7 +69,7 @@ CUDA_VISIBLE_DEVICES=0 python pipeline.py --log_selection --training_data_dir ..
 - Run Pipeline Stage 2: PLM Training and Inference
 ```
 cd src
-CUDA_VISIBLE_DEVICES=0 python pipeline.py --do_extraction --num_train_epochs 100 --training_data_dir ../data/Apache
+CUDA_VISIBLE_DEVICES=0 python pipeline.py --do_extraction --training_data_dir ../data/Apache
 ```
 
 You can also evaluate the performance of Industry dataset by replacing `--training_data_dir ../data/Apache ` to `--training_data_dir ../data/Industry-clean`.
