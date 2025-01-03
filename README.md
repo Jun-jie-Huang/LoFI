@@ -82,5 +82,12 @@ In this repository, we provide an anonymized dataset with confidential informati
 ### Citation
 If you find this repo helpful, please cite our paper: 
 ```
-
+@inproceedings{huang2024demystifying,
+  title={Demystifying and Extracting Fault-indicating Information from Logs for Failure Diagnosis},
+  author={Huang, Junjie and Jiang, Zhihan and Liu, Jinyang and Huo, Yintong and Gu, Jiazhen and Chen, Zhuangbin and Feng, Cong and Dong, Hui and Yang, Zengyin and Lyu, Michael R},
+  booktitle={2024 IEEE 35th International Symposium on Software Reliability Engineering (ISSRE)},
+  pages={511--522},
+  year={2024},
+  organization={IEEE}
+}
 ```
