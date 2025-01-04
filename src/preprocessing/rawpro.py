@@ -58,7 +58,7 @@ def parse_log_line(line, regex):
             log_dict['Timestamp'] = ""
         return {
             "time": log_dict.get("Timestamp", ""),
-            "level": log_dict.get("Level", ""),
+            "levels": log_dict.get("Level", ""),
             "raw_log": log_dict.get("Content", "").strip()
         }
     else:
@@ -93,6 +93,7 @@ def process_log_file(file_path, k):
             "raw_log": [log["raw_log"] for log in group],
             "summary": "",
             "time": [log["time"] for log in group],
+            "levels": [log["level"] for log in group],
             "parameters": [],
             "templates": []
         }
@@ -117,6 +118,7 @@ def main():
     parser = argparse.ArgumentParser(description="Convert a log file to the specified JSON format.")
     parser.add_argument('--filename', type=str, default='../../data/raw_files/file_test.txt', help='Input log file name')
     parser.add_argument('--k', type=int, default=100, help='Divide every k lines')
+    parser.add_argument('--save_filename', type=str, default='../../data_zengge/tttest.json', help='Input log file name')
     args = parser.parse_args()
 
     if not os.path.isfile(args.filename):
@@ -124,7 +126,7 @@ def main():
         return
 
     grouped_logs = process_log_file(args.filename, args.k)
-    save_to_json(grouped_logs, args.filename)
+    save_to_json(grouped_logs, args.save_filename)
 
 
 if __name__ == "__main__":
